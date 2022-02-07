@@ -51,5 +51,7 @@ $ terraform destroy
 - Once you have committed for the first time, you will start notice your terraform.tfstate file will be inside the S3 bucket. If you own
 - If you owns multiple workspaces, they also will come under .Env directory inside the S3 bucket. Under the .Env with workspace name you will be able to see terraform state files, which you used earlier with version enabled.
 <img src="Untitled picture.png" width="auto" height="auto">
+
 ## Summary
+
 For a better collaboration among different teams, we can use this kind of a setup. Since statefile is preserved with all information about the state of the deployment, it is also important to keep them safely. Versioning helps us to keep such a state preservation even though we have applied the latest one into production.
